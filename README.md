@@ -7,3 +7,7 @@ The one exception is the [Server-side website programming](https://developer.moz
 
 * https://github.com/mdn/express-locallibrary-tutorial
 * https://github.com/mdn/django-locallibrary-tutorial
+
+## User Note
+This clone is to test what is in the MDN Learning Area repo without accidentally PR-ing the folks who maintain it.
+That's about it.
