@@ -1,42 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>Object basics: Task 2</title>
-    <style>
-      p {
-        color: purple;
-        margin: 0.5em 0;
+
+<head>
+  <meta charset="utf-8" />
+  <title>Object basics: Task 2</title>
+  <style>
+    p {
+      color: purple;
+      margin: 0.5em 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+
+  <section class="preview">
+
+
+
+  </section>
+
+</body>
+<script>
+  let bandInfo;
+
+  // Add your code here
+
+  band = {
+    name: "My Chemical Romance",
+    nationality: "American",
+    genre: "pop punk",
+    members: 6,
+    formed: 2002,
+    split: false,
+    albums: [
+      {
+        name: "I Brought You My Bullets, You Brought Me Your Love",
+        released: 2002,
+      },
+      {
+        name: "Three Cheers for Sweet Revenge",
+        released: 2004,
+      },
+      {
+        name: "The Black Parade",
+        released: 2006,
+      },
+      {
+        name: "Danger Days: The True Lives of the Fabulous Killjoys",
+        released: 2010,
       }
+    ],
+  }
 
-      * {
-        box-sizing: border-box;
-      }
-    </style>
-    <link rel="stylesheet" href="../styles.css" />
-  </head>
+  bandInfo = `${band.name} is an ${band.nationality} ${band.genre} band of ${band.members} formed in ${band.formed}. Their first album, ${band.albums[0].name}, was released in ${band.albums[0].released}.`
 
-  <body>
+  // Don't edit the code below here!
 
-    <section class="preview">
-
-
-
-    </section>
-
-  </body>
-  <script>
-    let bandInfo;
-
-    // Add your code here
-
-
-    // Don't edit the code below here!
-
-    const section = document.querySelector('section');
-    let para1 = document.createElement('p');
-    para1.textContent = bandInfo;
-    section.appendChild(para1);
-  </script>
+  const section = document.querySelector('section');
+  let para1 = document.createElement('p');
+  para1.textContent = bandInfo;
+  section.appendChild(para1);
+</script>
 
 </html>
