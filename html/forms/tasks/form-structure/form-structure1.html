@@ -32,17 +32,33 @@
 
     <textarea class="playable playable-html" style="height: 220px;">
 <form>
-  Name:
-  <input type="text" id="name" name="name">
+  <fieldset>
+    <legend>Personal details</legend>
+    <ul>
+      <li>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+      </li>
+      <li>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+      </li>
+    </ul>
+  </fieldset>
 
-  Age:
-  <input type="number" id="age" name="age">
-
-  Comment:
-  <input type="text" id="comment" name="comment">
-
-  Email:
-  <input type="email" id="email" name="email">
+  <fieldset>
+    <legend>Comment details</legend>
+      <ul>
+        <li>
+          <label for="comment">Comment:</label>
+          <input type="text" id="comment" name="comment">
+        </li>
+        <li>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+        </li>
+      </ul>
+  </fieldset>
 </form>
     </textarea>
 
